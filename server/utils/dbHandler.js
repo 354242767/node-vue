@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-//mysql操作数据库
+//mysql操作数据库 统一接口
 var find=function(sql,sqlParams,fn){
     connection.query(sql,sqlParams,function (err, result) {
         if(err){
